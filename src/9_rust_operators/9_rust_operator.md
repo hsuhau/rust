@@ -1,7 +1,5 @@
 # Rust - Operators
 
-------
-
 An operator defines some function that will be performed on the data. The data on which operators work are called operands. Consider the following expression −
 
 7 + 5 = 12
