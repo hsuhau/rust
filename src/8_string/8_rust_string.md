@@ -1,7 +1,5 @@
 # Rust - String
 
-------
-
 The String data type in Rust can be classified into the following −
 
 - String Literal**(&str)**
