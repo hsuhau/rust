@@ -1,4 +1,4 @@
-fn main(){
+fn main() {
 
     // Declare a Variable
     let company_string = "TutorialsPoint";
@@ -21,19 +21,19 @@ fn main(){
         6	Arch	isize	usize
      */
     let result = 10;
-    let age:u32 = 20;
-    let sum:i32 = 5-15;
-    let mark:isize = 10;
-    let count:usize = 30;
+    let age: u32 = 20;
+    let sum: i32 = 5 - 15;
+    let mark: isize = 10;
+    let count: usize = 30;
     println!("result is : {}", result);
     println!("age is : {} and sum is : {}", age, sum);
     println!("mark is: {} and count is :{}", mark, count);
 
     // Integer Overflow
-    let age:u8 = 255;
-    let height:u8 = 256;
-    let weight:u8 = 257;
-    let score:u8 = 258;
+    let age: u8 = 255;
+    let height: u8 = 256;
+    let weight: u8 = 257;
+    let score: u8 = 258;
 
     println!("age is : {}", age);
     println!("height is : {}", height);

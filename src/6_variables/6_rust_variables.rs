@@ -1,4 +1,4 @@
-fn main(){
+fn main() {
     let fees = 25_000;
 
     /*
@@ -19,7 +19,7 @@ fn main(){
      */
     // fees = 35_000;
 
-    let mut salary:f64 = 35_000.00;
+    let mut salary: f64 = 35_000.00;
 
     salary = 25_000.0;
 

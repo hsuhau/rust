@@ -7,7 +7,9 @@ The String data type in Rust can be classified into the following −
 
 ## String Literal
 
-String literals (&str) are used when the value of a string is known at compile time. String literals are a set of characters, which are hardcoded into a variable. For example, *let company="Tutorials Point"*. String literals are found in module std::str. String literals are also known as string slices.
+String literals (&str) are used when the value of a string is known at compile time. String literals are a set of
+characters, which are hardcoded into a variable. For example, *let company="Tutorials Point"*. String literals are found
+in module std::str. String literals are also known as string slices.
 
 The following example declares two string literals − *company* and *location*.
 
@@ -19,7 +21,8 @@ fn main() {
 }
 ```
 
-String literals are static by default. This means that string literals are guaranteed to be valid for the duration of the entire program. We can also explicitly specify the variable as static as shown below −
+String literals are static by default. This means that string literals are guaranteed to be valid for the duration of
+the entire program. We can also explicitly specify the variable as static as shown below −
 
 ```rust
 fn main() {
@@ -37,7 +40,10 @@ company is : TutorialsPoint location :Hyderabad
 
 ## String Object
 
-The String object type is provided in Standard Library. Unlike string literal, the string object type is not a part of the core language. It is defined as public structure in standard library *pub struct String*. String is a growable collection. It is mutable and UTF-8 encoded type. The **String** object type can be used to represent string values that are provided at runtime. String object is allocated in the heap.
+The String object type is provided in Standard Library. Unlike string literal, the string object type is not a part of
+the core language. It is defined as public structure in standard library *pub struct String*. String is a growable
+collection. It is mutable and UTF-8 encoded type. The **String** object type can be used to represent string values that
+are provided at runtime. String object is allocated in the heap.
 
 ### Syntax
 
@@ -67,7 +73,8 @@ fn main(){
 }
 ```
 
-The above example creates two strings − an empty string object using the *new* method and a string object from string literal using the *from* method.
+The above example creates two strings − an empty string object using the *new* method and a string object from string
+literal using the *from* method.
 
 The output is as shown below −
 
@@ -134,7 +141,8 @@ Hello TutorialsPoint , Hello!
 
 ## Illustration: replace()
 
-The ***replace()*** function takes two parameters − the first parameter is a string pattern to search for and the second parameter is the new value to be replaced. In the above example, *Hello* appears two times in the *name1* string.
+The ***replace()*** function takes two parameters − the first parameter is a string pattern to search for and the second
+parameter is the new value to be replaced. In the above example, *Hello* appears two times in the *name1* string.
 
 The replace function replaces all occurrences of the string ***Hello\*** with ***Howdy\***.
 
@@ -238,7 +246,8 @@ length is 20
 
 ## Illustration: trim()
 
-The trim() function removes leading and trailing spaces in a string. NOTE that this function will not remove the inline spaces.
+The trim() function removes leading and trailing spaces in a string. NOTE that this function will not remove the inline
+spaces.
 
 ```rust
 fn main() {
@@ -265,7 +274,8 @@ length is 15
 
 ## Illustration:split_whitespace()
 
-The ***split_whitespace()\*** splits the input string into different strings. It returns an iterator so we are iterating through the tokens as shown below −
+The ***split_whitespace()\*** splits the input string into different strings. It returns an iterator so we are iterating
+through the tokens as shown below −
 
 ```rust
 fn main(){
@@ -292,7 +302,9 @@ token 5 tutorials
 
 ## Illustration: split() string
 
-The **split() string** method returns an iterator over substrings of a string slice, separated by characters matched by a pattern. The limitation of the split() method is that the result cannot be stored for later use. The ***collect\*** method can be used to store the result returned by split() as a vector.
+The **split() string** method returns an iterator over substrings of a string slice, separated by characters matched by
+a pattern. The limitation of the split() method is that the result cannot be stored for later use. The ***collect\***
+method can be used to store the result returned by split() as a vector.
 
 ```rust
 fn main() {
@@ -355,7 +367,10 @@ s
 
 ## Concatenation of Strings with + operator
 
-A string value can be appended to another string. This is called concatenation or interpolation. The result of string concatenation is a new string object. The + operator internally uses an *add* method. The syntax of the add function takes two parameters. The first parameter is *self* – the string object itself and the second parameter is a reference of the second string object. This is shown below −
+A string value can be appended to another string. This is called concatenation or interpolation. The result of string
+concatenation is a new string object. The + operator internally uses an *add* method. The syntax of the add function
+takes two parameters. The first parameter is *self* – the string object itself and the second parameter is a reference
+of the second string object. This is shown below −
 
 ```rust
 //add function
@@ -406,7 +421,8 @@ true
 
 ## Illustration: Format! Macro
 
-Another way to add to String objects together is using a macro function called format. The use of Format! is as shown below.
+Another way to add to String objects together is using a macro function called format. The use of Format! is as shown
+below.
 
 ```rust
 fn main(){

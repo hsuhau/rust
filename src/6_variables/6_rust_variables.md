@@ -1,6 +1,9 @@
 # Rust - Variables
 
-A variable is a named storage that programs can manipulate. Simply put, a variable helps programs to store values. Variables in Rust are associated with a specific data type. The data type determines the size and layout of the variable's memory, the range of values that can be stored within that memory and the set of operations that can be performed on the variable.
+A variable is a named storage that programs can manipulate. Simply put, a variable helps programs to store values.
+Variables in Rust are associated with a specific data type. The data type determines the size and layout of the
+variable's memory, the range of values that can be stored within that memory and the set of operations that can be
+performed on the variable.
 
 ## Rules for Naming a Variable
 
@@ -12,7 +15,8 @@ In this section, we will learn about the different rules for naming a variable.
 
 ## Syntax
 
-The data type is optional while declaring a variable in Rust. The data type is inferred from the value assigned to the variable.
+The data type is optional while declaring a variable in Rust. The data type is inferred from the value assigned to the
+variable.
 
 The syntax for declaring a variable is given below.
 
@@ -35,7 +39,8 @@ The output of the above code will be ***fees is 25000 and salary is 35000***.
 
 ## Immutable
 
-By default, variables are immutable − read only in Rust. In other words, the variable's value cannot be changed once a value is bound to a variable name.
+By default, variables are immutable − read only in Rust. In other words, the variable's value cannot be changed once a
+value is bound to a variable name.
 
 Let us understand this with an example.
 
@@ -63,11 +68,13 @@ error[E0384]: re-assignment of immutable variable `fees`
 error: aborting due to previous error(s)
 ```
 
-The error message indicates the cause of the error – you cannot assign values twice to immutable variable fees. This is one of the many ways Rust allows programmers to write code and takes advantage of the safety and easy concurrency.
+The error message indicates the cause of the error – you cannot assign values twice to immutable variable fees. This is
+one of the many ways Rust allows programmers to write code and takes advantage of the safety and easy concurrency.
 
 ## Mutable
 
-Variables are immutable by default. Prefix the variable name with **mut** keyword to make it mutable. The value of a mutable variable can be changed.
+Variables are immutable by default. Prefix the variable name with **mut** keyword to make it mutable. The value of a
+mutable variable can be changed.
 
 The syntax for declaring a mutable variable is as shown below −
 

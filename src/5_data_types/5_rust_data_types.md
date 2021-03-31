@@ -1,7 +1,11 @@
 # Rust - Data Types
-The Type System represents the different types of values supported by the language. The Type System checks validity of the supplied values, before they are stored or manipulated by the program. This ensures that the code behaves as expected. The Type System further allows for richer code hinting and automated documentation too.
 
-Rust is a statically typed language. Every value in Rust is of a certain data type. The compiler can automatically infer data type of the variable based on the value assigned to it.
+The Type System represents the different types of values supported by the language. The Type System checks validity of
+the supplied values, before they are stored or manipulated by the program. This ensures that the code behaves as
+expected. The Type System further allows for richer code hinting and automated documentation too.
+
+Rust is a statically typed language. Every value in Rust is of a certain data type. The compiler can automatically infer
+data type of the variable based on the value assigned to it.
 
 ## Declare a Variable
 
@@ -21,7 +25,8 @@ fn main() {
 }
 ```
 
-In the above example, data type of the variables will be inferred from the values assigned to them. For example, Rust will assign string data type to the variable *company_string*, float data type to *rating_float*, etc.
+In the above example, data type of the variables will be inferred from the values assigned to them. For example, Rust
+will assign string data type to the variable *company_string*, float data type to *rating_float*, etc.
 
 The *println!* macro takes two arguments −
 
@@ -52,9 +57,11 @@ We will learn about each type in our subsequent sections.
 
 ## Integer
 
-An integer is a number without a fractional component. Simply put, the integer data type is used to represent whole numbers.
+An integer is a number without a fractional component. Simply put, the integer data type is used to represent whole
+numbers.
 
-Integers can be further classified as Signed and Unsigned. Signed integers can store both negative and positive values. Unsigned integers can only store positive values. A detailed description if integer types is given below −
+Integers can be further classified as Signed and Unsigned. Signed integers can store both negative and positive values.
+Unsigned integers can only store positive values. A detailed description if integer types is given below −
 
 | Sr.No. | Size    | Signed | Unsigned |
 | ------ | ------- | ------ | -------- |
@@ -65,7 +72,9 @@ Integers can be further classified as Signed and Unsigned. Signed integers can s
 | 5      | 128 bit | i128   | u128     |
 | 6      | Arch    | isize  | usize    |
 
-The size of an integer can be *arch*. This means the size of the data type will be derived from the *architecture* of the machine. An integer the size of which is *arch* will be 32 bits on an x86 machine and 64 bits on an x64 machine. An arch integer is primarily used when indexing some sort of collection.
+The size of an integer can be *arch*. This means the size of the data type will be derived from the *architecture* of
+the machine. An integer the size of which is *arch* will be 32 bits on an x86 machine and 64 bits on an x64 machine. An
+arch integer is primarily used when indexing some sort of collection.
 
 ### Illustration
 
@@ -94,13 +103,16 @@ The above code will return a compilation error if you replace the value of *age*
 
 ### Integer Range
 
-Each signed variant can store numbers from *-(2^(n-1) to 2^(n-1) -1*, where n is the number of bits that variant uses. For example, i8 can store numbers from *-(2^7) to 2^7 -1* − here we replaced *n* with 8.
+Each signed variant can store numbers from *-(2^(n-1) to 2^(n-1) -1*, where n is the number of bits that variant uses.
+For example, i8 can store numbers from *-(2^7) to 2^7 -1* − here we replaced *n* with 8.
 
-Each unsigned variant can store numbers from *0* to *(2^n)-1*. For example, u8 can store numbers from *0* to *2^7*, which is equal to 0 to 255.
+Each unsigned variant can store numbers from *0* to *(2^n)-1*. For example, u8 can store numbers from *0* to *2^7*,
+which is equal to 0 to 255.
 
 ### Integer Overflow
 
-An integer overflow occurs when the value assigned to an integer variable exceeds the Rust defined range for the data type. Let us understand this with an example −
+An integer overflow occurs when the value assigned to an integer variable exceeds the Rust defined range for the data
+type. Let us understand this with an example −
 
 ``` rust
 fn main() {
@@ -118,7 +130,10 @@ fn main() {
 }
 ```
 
-The valid range of unsigned u8 variable is 0 to 255. In the above example, the variables are assigned values greater than 255 (upper limit for an integer variable in Rust). On execution, the above code will return a warning − ***warning − literal out of range for u8\*** for weight, height and score variables. The overflow values after 255 will start from 0, 1, 2, etc. The final output without warning is as shown below −
+The valid range of unsigned u8 variable is 0 to 255. In the above example, the variables are assigned values greater
+than 255 (upper limit for an integer variable in Rust). On execution, the above code will return a warning − ***warning
+− literal out of range for u8\*** for weight, height and score variables. The overflow values after 255 will start from
+0, 1, 2, etc. The final output without warning is as shown below −
 
 ```
 age is 255
@@ -129,7 +144,8 @@ score is 2
 
 ## Float
 
-Float data type in Rust can be classified as **f32** and **f64**. The f32 type is a single-precision float, and f64 has double precision. The default type is f64. Consider the following example to understand more about the float data type.
+Float data type in Rust can be classified as **f32** and **f64**. The f32 type is a single-precision float, and f64 has
+double precision. The default type is f64. Consider the following example to understand more about the float data type.
 
 ``` rust
 fn main() {
@@ -152,7 +168,8 @@ cost is 15000.6
 
 ### Automatic Type Casting
 
-Automatic type casting is not allowed in Rust. Consider the following code snippet. An integer value is assigned to the float variable ***interest\***.
+Automatic type casting is not allowed in Rust. Consider the following code snippet. An integer value is assigned to the
+float variable ***interest\***.
 
 ``` rust
 fn main() {
@@ -177,7 +194,8 @@ error: aborting due to previous error(s)
 
 ### Number Separator
 
-For easy readability of large numbers, we can use a visual separator _ underscore to separate digits. That is 50,000 can be written as 50_000 . This is shown in the below example.
+For easy readability of large numbers, we can use a visual separator _ underscore to separate digits. That is 50,000 can
+be written as 50_000 . This is shown in the below example.
 
 ``` rust
 fn main() {
@@ -217,7 +235,10 @@ Is Rust Programming Fun ? true
 
 ### Character
 
-The character data type in Rust supports numbers, alphabets, Unicode and special characters. Use the **char** keyword to declare a variable of character data type. Rust’s char type represents a Unicode Scalar Value, which means it can represent a lot more than just ASCII. Unicode Scalar Values range from **U+0000** to **U+D7FF** and **U+E000** to **U+10FFFF** inclusive.
+The character data type in Rust supports numbers, alphabets, Unicode and special characters. Use the **char** keyword to
+declare a variable of character data type. Rust’s char type represents a Unicode Scalar Value, which means it can
+represent a lot more than just ASCII. Unicode Scalar Values range from **U+0000** to **U+D7FF** and **U+E000** to **
+U+10FFFF** inclusive.
 
 Let us consider an example to understand more about the Character data type.
 
