@@ -95,6 +95,7 @@ fn display(v:Vec<i32>)->Vec<i32> {
    println!("inside display {:?}",v);
 } */
 
+// todo:don't understand
 fn main() {
     let u1 = 10;
     let u2 = u1;  // u1 value copied(not moved) to u2

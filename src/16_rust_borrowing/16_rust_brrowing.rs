@@ -1,3 +1,4 @@
+// todo: don't understand, ignore right now.
 fn main() {
     let v = vec![10, 20, 30];
     print_vector(v)；
