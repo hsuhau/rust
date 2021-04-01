@@ -1,0 +1,1 @@
+fn main() {let vector_name = vec![val1,val2,val3]}
